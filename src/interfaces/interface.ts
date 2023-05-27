@@ -1,4 +1,4 @@
 export interface ListObj {
-    title: string
-    descr: string
+  title: string
+  descr: string
 }
