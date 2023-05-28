@@ -1,8 +1,8 @@
 import React from 'react'
 import logo from './logo.svg'
 import './App.css'
-import List from './components/List'
-import Counter from './components/Counter'
+import List from '@components/List'
+import Counter from '@components/Counter'
 
 const App: React.FC = () => {
   return (
