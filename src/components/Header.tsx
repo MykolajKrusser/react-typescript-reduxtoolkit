@@ -1,6 +1,8 @@
-import classes from './Header.module.css';
+import React from 'react'
+import type { FC } from 'react'
+import classes from './Header.module.css'
 
-const Header = () => {
+const Header: FC = () => {
   return (
     <header className={classes.header}>
       <h1>Redux Auth</h1>
@@ -18,7 +20,7 @@ const Header = () => {
         </ul>
       </nav>
     </header>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header

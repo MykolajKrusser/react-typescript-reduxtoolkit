@@ -1,5 +1,5 @@
 import type { FC } from 'react'
-import type { InitState } from '@interfaces/InitState'
+import type { InitCounterStateReducer } from '@interfaces/InitState'
 import React from 'react'
 import classes from './Counter.module.css'
 import { useSelector, useDispatch } from 'react-redux'
@@ -7,8 +7,8 @@ import { counterActions } from '@store/index'
 
 const Counter: FC = () => {
   const dispatch = useDispatch()
-  const counter = useSelector((state: InitState) => state.counter)
-  const showCounter = useSelector((state: InitState) => state.showCounter)
+  const counter = useSelector((state: InitCounterStateReducer) => state.counter.count)
+  const showCounter = useSelector((state: InitCounterStateReducer) => state.counter.showCounter)
 
   const toggleCounterHandler: () => void = () => {
     dispatch(counterActions.toggle())

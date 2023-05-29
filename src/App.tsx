@@ -1,18 +1,15 @@
-import React from 'react'
-import logo from './logo.svg'
-import './App.css'
-import List from '@components/List'
+import React, { Fragment } from 'react'
 import Counter from '@components/Counter'
+import Header from '@components/Header'
+import Auth from '@components/Auth'
 
 const App: React.FC = () => {
   return (
-    <div className='App'>
-      <header className='App-header'>
-        <img src={logo} className='App-logo' alt='logo' />
-        <List title={'Hello'} descr={'sdfsadf sdfsdaf fdd'} />
-        <Counter/>
-      </header>
-    </div>
+    <Fragment>
+      <Header/>
+      <Auth/>
+      <Counter/>
+    </Fragment>
   )
 }
 
