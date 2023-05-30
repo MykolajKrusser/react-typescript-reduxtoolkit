@@ -9,3 +9,13 @@ export interface InitCounterStateReducer {
     showCounter: boolean
   }
 }
+
+export interface isAuth {
+  isAuth: boolean
+}
+
+export interface isAuthReducer {
+  auth: {
+    isAuth: boolean
+  }
+}
