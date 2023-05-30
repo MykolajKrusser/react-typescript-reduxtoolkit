@@ -2,7 +2,7 @@ import classes from './Auth.module.css'
 import React from 'react'
 import type { FC } from 'react'
 import { useDispatch } from 'react-redux'
-import { authActions } from '@store/index'
+import { authActions } from '@store/auth'
 const Auth: FC = () => {
   const dispatch = useDispatch()
   const loginHandler = (event: React.SyntheticEvent) => {
