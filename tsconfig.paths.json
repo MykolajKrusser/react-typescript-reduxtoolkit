@@ -4,7 +4,8 @@
     "paths": {
       "@components/*": ["./src/components/*"],
       "@interfaces/*": ["./src/interfaces/*"],
-      "@store/*": ["./src/store/*"]
+      "@store/*": ["./src/store/*"],
+      "@api/*": ["./src/api/*"]
     }
   }
 }

@@ -7,7 +7,8 @@ module.exports = function override (config) {
       ...config.resolve.alias,
       '@components': path.resolve(__dirname, 'src/components'),
       '@interfaces': path.resolve(__dirname, 'src/interfaces'),
-      '@store': path.resolve(__dirname, 'src/store')
+      '@store': path.resolve(__dirname, 'src/store'),
+      '@api': path.resolve(__dirname, 'src/api')
     }
   }
 
